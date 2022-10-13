@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
- //   public void PlayGame()
-  //  {
-    //   UnityEngine.SceneManagement.SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // All of these examples loads 'Level_0'
-  //  }
+    public void PlayGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1); // All of these examples loads 'Level_0'
+    }
 
-//   public void QuitGame()
-  //  {
-   //     Application.Quit();
-  //  }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

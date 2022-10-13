@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     //Create a reference to the Rigidbody2D so we can manipulate it
     Rigidbody2D playerObject;
+    Animator anim;
 
 
     // Start is called before the first frame update
@@ -21,7 +22,8 @@ public class PlayerController : MonoBehaviour
     {
         //Find the RigidBody2D component that is attached to the same object as this script
         playerObject = GetComponent<Rigidbody2D>();
-    }
+        anim = GetComponent<Animator>();
+    }   
 
     // Update is called once per frame
     void Update()
@@ -62,5 +64,6 @@ public class PlayerController : MonoBehaviour
             doubleJump = false;
         }
 
+        anim.SetBool("OnGround", isOnGround);
     }
 }
