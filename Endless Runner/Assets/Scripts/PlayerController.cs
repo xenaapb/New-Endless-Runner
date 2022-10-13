@@ -16,6 +16,13 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D playerObject;
     Animator anim;
 
+    public AudioClip backgroundMusic;
+
+    public AudioSource sfxPlayer;
+    public AudioSource musicPlayer;
+
+ 
+        
 
     // Start is called before the first frame update
     void Start()
@@ -35,9 +42,6 @@ public class PlayerController : MonoBehaviour
         {
             maxSpeed = 5.0f;
         }
-
-        //Create a 'float' that will be equal to the players horizontal input
-
 
         //Set movementValueX to 1.0f, so that we always run forward and no longer care about player input
         float movementValueX = 1.0f;
@@ -65,5 +69,6 @@ public class PlayerController : MonoBehaviour
         }
 
         anim.SetBool("OnGround", isOnGround);
+
     }
 }
