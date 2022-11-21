@@ -14,14 +14,23 @@ public class PlayerController : MonoBehaviour
 
     //Create a reference to the Rigidbody2D so we can manipulate it
     Rigidbody2D playerObject;
+    Animator anim;
 
+    public AudioClip backgroundMusic;
+
+    public AudioSource sfxPlayer;
+    public AudioSource musicPlayer;
+
+ 
+        
 
     // Start is called before the first frame update
     void Start()
     {
         //Find the RigidBody2D component that is attached to the same object as this script
         playerObject = GetComponent<Rigidbody2D>();
-    }
+        anim = GetComponent<Animator>();
+    }   
 
     // Update is called once per frame
     void Update()
@@ -33,9 +42,6 @@ public class PlayerController : MonoBehaviour
         {
             maxSpeed = 5.0f;
         }
-
-        //Create a 'float' that will be equal to the players horizontal input
-
 
         //Set movementValueX to 1.0f, so that we always run forward and no longer care about player input
         float movementValueX = 1.0f;
@@ -61,6 +67,8 @@ public class PlayerController : MonoBehaviour
         {
             doubleJump = false;
         }
+
+        anim.SetBool("OnGround", isOnGround);
 
     }
 }
