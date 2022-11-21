@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraControl
     - Destroyer
+    - MainMenu
     - Parallaxingbackground
     - PlayerController
     - Spawner
@@ -10,11 +11,8 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -27,6 +25,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -37,6 +36,13 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
   sceneClasses:
     Assets/Scenes/Scene/Main menu.unity:
     - Class: 1
@@ -58,15 +64,31 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 1484}
     - Class: 114
-      Script: {instanceID: 2420}
+      Script: {instanceID: 1868}
     - Class: 114
-      Script: {instanceID: 4900}
+      Script: {instanceID: 2276}
     - Class: 114
-      Script: {instanceID: 5064}
+      Script: {instanceID: 2712}
     - Class: 114
-      Script: {instanceID: 5472}
+      Script: {instanceID: 2846}
+    - Class: 114
+      Script: {instanceID: 2890}
+    - Class: 114
+      Script: {instanceID: 2940}
+    - Class: 114
+      Script: {instanceID: 3124}
+    - Class: 114
+      Script: {instanceID: 3374}
+    - Class: 114
+      Script: {instanceID: 3502}
+    - Class: 114
+      Script: {instanceID: 4760}
+    - Class: 114
+      Script: {instanceID: 4922}
+    - Class: 114
+      Script: {instanceID: 5330}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -74,6 +96,14 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Scene/SampleScene.unity:
     - Class: 1
@@ -106,6 +136,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -115,15 +149,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2544}
+      Script: {instanceID: 2400}
     - Class: 114
-      Script: {instanceID: 4056}
+      Script: {instanceID: 3914}
     - Class: 114
-      Script: {instanceID: 4526}
+      Script: {instanceID: 4384}
     - Class: 114
-      Script: {instanceID: 4760}
+      Script: {instanceID: 4620}
     - Class: 114
-      Script: {instanceID: 5626}
+      Script: {instanceID: 5484}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -309,6 +343,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TextMeshSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu
   - hash:
       serializedVersion: 2
       Hash: 27e5341178f188b89bdc6495710b590c
@@ -665,7 +705,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: 95485354bc2b2fd24bbc0593b46b0e2b
+      Hash: f834114f46dd34b38432d7d1df3f0256
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -711,12 +751,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlPlayableAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainMenu
   - hash:
       serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
@@ -889,5 +923,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Scene/Main menu.unity
   - Assets/Scenes/Scene/SampleScene.unity
-  playerPath: //school.lan/filestore/UserData/Students/Intake2022/xpointer2022/Documents/X.P
-    Game/Endless Runner.exe
+  playerPath: //school.lan/filestore/UserData/Students/Intake2022/xpointer2022/Documents/Endless
+    runner final/Endless Runner.exe
